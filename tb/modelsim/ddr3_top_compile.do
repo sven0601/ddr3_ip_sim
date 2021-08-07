@@ -81,13 +81,13 @@ C:\\modeltech64_10.5\\win64\\vlog -64 -incr -work xil_defaultlib "+incdir+../../
 "../../src/ui/mig_7series_v4_2_ui_wr_data.v" \
 "../../src/ddr3_mig_sim.v" \
 "../../src/ddr3.v" \
-"../../src/ddr3_top.v" \
 
 C:\\modeltech64_10.5\\win64\\vlog -64 -incr -sv -work xil_defaultlib "+incdir+../../src" \
 "../tb_src/model/ddr3_model.sv" \
 
 C:\\modeltech64_10.5\\win64\\vlog -64 -incr -work xil_defaultlib "+incdir+../../src" \
 "../tb_src/ddr3_top_tb.v" \
+"../tb_src/ddr3_app_drv.v" \
 
 # compile glbl module
 C:\\modeltech64_10.5\\win64\\vlog -work xil_defaultlib "glbl.v"
