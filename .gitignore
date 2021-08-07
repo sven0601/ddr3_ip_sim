@@ -1,0 +1,33 @@
+# files to be ignored by git
+# Lines starting with ! identify files to be tracked
+# Lines not starting with ! identify files to be ignored by git
+#####################################
+# Global
+#####################################
+!.gitignore
+*.log
+*log.txt
+*.orig
+*.exe
+*.fmt
+*.hex
+*.zip
+*.tmp
+*.xml
+!*.csh
+!*.tcl
+!*.c
+!*.h
+
+######################################
+# Test Bench
+######################################
+tb/modelsim/*
+!tb/modelsim/*.tcl
+!tb/modelsim/*.do
+!tb/modelsim/*.v
+!tb/modelsim/*.bat
+!tb/modelsim/*.ini
+!tb/modelsim/modelsim_lib
+tb/modelsim/modelsim_lib/msim
+tb/modelsim/modelsim_lib/work
