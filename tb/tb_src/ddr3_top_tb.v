@@ -64,12 +64,10 @@ module ddr3_top_tb;
         @(posedge init_calib_complete)
         #(100*CLKIN_PERIOD);
         test_start  <=  1'b1;
-        // #(10)
-        // test_start  <=  1'b0;
-        // #(100000)
-        // test_start  <=  1'b1;
-        // #(10)
-        // test_start  <=  1'b0;
+        #(10)
+        test_start  <=  1'b0;
+        #500000
+        $stop;
     end
 
 //**************************************************************************//
